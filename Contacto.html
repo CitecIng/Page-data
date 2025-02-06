@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Pagina/Style/Contacto.css">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>Contáctanos</h1>
+            <div class="contact-container">
+             
+              <div class="contact-form">
+                <form action="#" method="POST">
+                  <!-- Nombre y correo en una fila para pantallas mayores -->
+                  <div class="form-flex">
+                    <div class="form-group">
+                      <label for="nombre">
+                        <ion-icon name="person-outline"></ion-icon>
+                        Nombre
+                      </label>
+                      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        Correo Electrónico
+                      </label>
+                      <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+                    </div>
+                  </div>
+                  <!-- Asunto -->
+                  <div class="form-group">
+                    <label for="asunto">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                      Asunto
+                    </label>
+                    <input type="text" id="asunto" name="asunto" placeholder="Asunto del mensaje">
+                  </div>
+                  <!-- Mensaje -->
+                  <div class="form-group">
+                    <label for="mensaje">
+                      <ion-icon name="create-outline"></ion-icon>
+                      Mensaje
+                    </label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe aquí tu mensaje..." required></textarea>
+                  </div>
+                 
+                  <div class="form-group" style="text-align: center;">
+                    <button type="submit">Enviar Mensaje</button>
+                  </div>
+                </form>
+              </div>
+              
+              <!-- Sección de Información de Contacto y Mapa -->
+              <div class="contact-info">
+                <!-- Datos de contacto -->
+                <div class="info-item">
+                  <ion-icon name="location-outline"></ion-icon>
+                  <span>Pinos 3 Mz 24 Lote 3, Colonia Puente de Vigas 54090, Tlalnepantla de Baz, Estado de México</span>
+                </div>
+                <div class="info-item">
+                  <ion-icon name="call-outline"></ion-icon>
+                  <span>+52 55 5362 6141</span>
+                </div>
+                <div class="info-item">
+                  <ion-icon name="mail-outline"></ion-icon>
+                  <span>contacto@ejemplo.com</span>
+                </div>
+                <!-- Mapa de ubicación -->
+                <div class="map-container">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.63169836495115!2d-99.21457564475212!3d19.51611534358241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d202cf57c65e5b%3A0x2f0352e90051d794!2sCITEC%20ING!5e0!3m2!1ses-419!2smx!4v1738780003641!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+/* Estilos del header */
+main{
+    
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.logo{
+    
+    position: relavite;
+    margin-left: 60px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #205cca;
+    border-radius: 5px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    gap: 15px;
+}
+
+.icon-elem {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icon {
+    color: white;
+    font-size: 32px;
+    transition: transform 0.5s ease;
+}
+
+.icon:hover {
+    transform: translateY(-5px);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.menu-elem {
+    list-style: none;
+}
+
+.menu-icon {
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: 0.3s;
+    margin: 0 10px;
+}
+
+.menu-icon:hover {
+    opacity: 1;
+}
+
+

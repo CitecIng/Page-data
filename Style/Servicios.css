@@ -1,0 +1,173 @@
+  /* Contenedor principal */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  /* Estilo de cada tarjeta (content-father) */
+  .content-father {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 900px;
+    background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+  }
+  
+  /* Animación de carga */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Imagen a la izquierda */
+  .content {
+    flex: 0 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content img {
+    width: 150px;
+    height: 150;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .content img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Información y detalles a la derecha */
+  .info {
+    flex: 1;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Títulos de cada servicio */
+  .info > .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0056b3;
+  }
+  
+  /* Estilos para <details> y <summary> */
+  details {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  summary {
+    padding: 12px 16px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #007bff;
+    transition: background 0.3s ease;
+  }
+  
+  /* Icono personalizado en summary */
+  summary::before {
+    content: "➕";
+    font-size: 1.2rem;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  details[open] summary::before {
+    transform: rotate(45deg);
+    content: "➖";
+    color: #28a745;
+  }
+  
+  /* Hover para summary */
+  summary:hover {
+    background: #f0f8ff;
+  }
+  
+  /* Contenido del detalle */
+  details p,
+  .details-content {
+    padding: 12px 16px;
+    background: #fafafa;
+    border-top: 1px solid #e0e0e0;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  /* Animación para el contenido del details */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Lista dentro de details */
+  .content-list {
+    list-style: disc inside;
+    padding: 0 16px 12px;
+  }
+  
+  .content-list li {
+    padding: 4px 0;
+    font-size: 0.95rem;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .content-father {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 95%;
+      padding: 15px;
+    }
+  
+    .content {
+      margin-bottom: 15px;
+    }
+  
+    .info {
+      padding-left: 0;
+    }
+  
+    summary {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content-father {
+      padding: 10px;
+    }
+  
+    .info > p,
+    .info > .titile {
+      font-size: 1rem;
+    }
+  }
+  
+
+  
