@@ -1,30 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Pagina/Style/Bolsa.css">
+    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title>Bolsa de trabajo</title>
 </head>
+
 <body>
     <main>
-        <form action="Send.php" method="post" enctype="multipart/form-data">
-            <label>Nombre:</label>
-            <input type="text" name="nombre" required>
+        <div class="container">
+            <!-- Sección superior: Imagen y texto -->
+            <div class="hero">
+              <img src="" alt="Imagen de Contacto">
+              <h1>Unete</h1>
+              <p>Estamos aquí para ayudarte, forma parte de nuestro equipo, vive la experiencia CITEC</p>
+            </div>
             
-            <label>Correo:</label>
-            <input type="email" name="email" required>
-        
-            <label>Mensaje:</label>
-            <textarea name="mensaje" required></textarea>
-        
-            <label>Adjuntar Archivo:</label>
-            <input type="file" name="archivo" required>
-        
-            <button type="submit">Enviar</button>
-        </form>
-        
-
+            <!-- Sección inferior: Formulario -->
+            <div class="form-container">
+              <form action="Send.php" method="post" enctype="multipart/form-data">
+                <div class="input-group">
+                  <label for="nombre">
+                    <ion-icon name="person-outline"></ion-icon>
+                    Nombre:
+                  </label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div class="input-group">
+                  <label for="email">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    Correo:
+                  </label>
+                  <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+                </div>
+                <div class="input-group">
+                  <label for="mensaje">
+                    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                    Mensaje:
+                  </label>
+                  <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
+                </div>
+                <div class="input-group">
+                  <label for="archivo">
+                    <ion-icon name="attach-outline"></ion-icon>
+                    Adjuntar Archivo:
+                  </label>
+                  <input type="file" id="archivo" name="archivo" accept=".pdf">
+                  <p>(PDF)</p>
+                </div>
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
+          </div>
     </main>
-    
 </body>
+
 </html>
