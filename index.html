@@ -4,20 +4,18 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/Pagina/Img/logo1.1.png" />
-    <link rel="stylesheet" href="/Pagina/Style/Index.css">
-    <script src="/Pagina/Dinamic/Contenct.js"></script>
+    <link rel="shortcut icon" href="./Img/logo1.1.png" />
+    <link rel="stylesheet" href="./Style/Index.css">
+    <script src="./Dinamic/Contenct.js"></script>
     <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="/Pagina/Dinamic/hamburguesa.js"></script>
     <title>Citec</title>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <a href="/Pagina/index.html">
-                <img id="logoPrincipal" src="/Pagina/Img/logo grande-Photoroom.png" alt="logo" width="180px"
-                    height="90px">
+            <a href="./index.html">
+                <img id="logoPrincipal" src="./Img/logo grande-Photoroom.png" alt="logo" width="180px" height="90px">
             </a>
         </div>
         <div class="menu-toggle" id="mobile-menu">
@@ -26,11 +24,11 @@
         <nav>
 
             <ul class="menu" id="nav-menu">
-                <li><a href="/Pagina/index.html" data-section="Inicio">Inicio</a></li>
-                <li><a href="/Pagina/Servicios.html" data-section="Servicios">Servicios</a></li>
-                <li><a href="/Pagina/Clientes.html" data-section="Clientes">Clientes</a></li>
-                <li><a href="/Pagina/Contacto.html" data-section="Contacto">Contactanos</a></li>
-                <li><a href="/Pagina/Bolsa.html" data-section="Bolsa">Bolsa de trabajo</a></li>
+                <li><a href="./index.html" data-section="Inicio">Inicio</a></li>
+                <li><a href="./Servicios.html" data-section="Servicios">Servicios</a></li>
+                <li><a href="./Clientes.html" data-section="Clientes">Clientes</a></li>
+                <li><a href="./Contacto.html" data-section="Contacto">Contactanos</a></li>
+                <li><a href="./Bolsa.html" data-section="Bolsa">Bolsa de trabajo</a></li>
 
             </ul>
         </nav>
@@ -67,24 +65,7 @@
             </li>
         </ul>
     </footer>
-    <script>
-        const menuToggle = document.getElementById('mobile-menu');
-        const navMenu = document.getElementById('nav-menu');
-
-       
-        menuToggle.addEventListener('click', (event) => {
-            event.stopPropagation(); 
-            navMenu.classList.toggle('open');
-        });
-
-        
-        document.addEventListener('click', (event) => {
-            if (!navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
-                navMenu.classList.remove('open');
-            }
-        });
-
-    </script>
+    <script src="./Dinamic/hamburguesa.js"></script>
 </body>
 
 </html>
