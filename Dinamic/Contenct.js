@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   function loadContent(section) {
-      fetch(`/Pagina/${section}.html`)
+      fetch(`./${section}.html`)
           .then((response) => response.text())
           .then((data) => {
               document.getElementById("main-content").innerHTML = data;
