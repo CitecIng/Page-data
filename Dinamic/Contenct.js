@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   function loadContent(section) {
-      fetch(`./${section}.html`)
+      fetch(`https://citecing.github.io/Pagina/${section}.html`)
           .then((response) => response.text())
           .then((data) => {
               document.getElementById("main-content").innerHTML = data;
